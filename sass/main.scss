@@ -1,3 +1,6 @@
-body {
-    background: orange;
-}
+
+
+@import 'partials/bases/body';
+
+
+@import 'partials/mobile/header';
