@@ -1,4 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: #d3d3d3;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
+section {
+  padding: 20px;
+}
+.annule {
+  padding: 0;
+}
+h2 {
+  font-size: 1.8rem;
+  margin: 30px 0px;
+}
+// .pl20 {
+//   padding-left: 20px;
+// }
