@@ -1,7 +1,9 @@
 @media (max-width: 599px) {
 
+  @import 'mixin';
   @import '../mobile/header';
   @import '../mobile/hero';
   @import '../mobile/fonctionnement';
+  @import '../mobile/restaurants';
 
 }
