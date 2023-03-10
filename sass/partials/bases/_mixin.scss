@@ -11,3 +11,7 @@
         box-sizing: border-box;
         @include dropshadow;
 }
+@mixin logo-svg {
+    -webkit-mask: url(/./images/logo/ohmyfood@2x.svg) no-repeat center;
+    mask: url(/images/logo/ohmyfood@2x.svg) no-repeat center;
+}
