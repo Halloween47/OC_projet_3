@@ -1,10 +1,15 @@
 @media (max-width: 599px) {
 
   @import 'mixin';
-  @import '../mobile/header';
-  @import '../mobile/hero';
-  @import '../mobile/fonctionnement';
-  @import '../mobile/restaurants';
-  @import '../mobile/footer';
 
+@import '../header';
+@import '../footer';
+
+  @import '../mobile/accueil/localisation';
+  @import '../mobile/accueil/hero';
+  @import '../mobile/accueil/fonctionnement';
+  @import '../mobile/accueil/restaurants';
+
+  @import '../mobile/menu-a_la_francaise/hero';
+  @import '../mobile/menu-a_la_francaise/menu';
 }

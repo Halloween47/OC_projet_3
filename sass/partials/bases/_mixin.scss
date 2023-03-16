@@ -1,9 +1,15 @@
 
-@mixin background-color-variation($color, $amount) {
+@mixin background-color-lighten($color, $amount) {
   background-color: lighten($color, $amount);
 }
 @mixin background-color-darken($color, $amount) {
   background-color: darken($color, $amount);
+}
+@mixin color-lighten($color, $amount) {
+  color: lighten($color, $amount);
+}
+@mixin color-darken($color, $amount) {
+  color: darken($color, $amount);
 }
 @mixin dropshadow {
   -webkit-box-shadow: 0px 0px 47px -20px #000000;

@@ -1,0 +1,84 @@
+.menus {
+  @include background-color-lighten(grey, 45%);
+  width: 100%;
+  height: auto;
+
+  border-radius: 50px 50px 0px 0px;
+  margin-top: -60px;
+  padding: 40px;
+
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+
+  &__titre {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      font-weight: 500;
+    }
+  }
+  &__menu {
+    h2 {
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 20px;
+      @include color-darken(grey, 10%);
+      margin-bottom: 0;
+
+    }
+    .trait {
+      @include background-color-lighten($color-tertiaire, 0%);
+      // background-color: green;
+      width: 50px; height: 3px;
+      margin-top: 5px;
+    }
+
+    .plats {
+      .plat {
+        background-color: #fff;
+        width: 100%;
+        height: auto;
+        margin: 15px 0px;
+        padding: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+@include dropshadow;
+
+        &__description {
+          h3 {
+            font-size: 20px;
+            font-weight: 600;
+          }
+          p {
+            @include color-darken($color-grey, 20%);
+          }
+        }
+        p {
+          padding-right: 10px;
+          font-weight: 500;
+        }
+
+
+      }
+    }
+  }
+  button {
+    color: #fff;
+    background: rgb(255,121,218);
+    background: linear-gradient(172deg, rgba(255,121,218,1) 21%, rgba(147,86,220,1) 95%);
+    border-radius: 50px;
+    width: 240px;
+    padding: 20px;
+    text-decoration: none;
+    border:none;
+    font-size: 20px;
+    margin: 50px auto;
+
+  }
+}
