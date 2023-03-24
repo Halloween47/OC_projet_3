@@ -20,6 +20,10 @@
     h1 {
       font-weight: 500;
       font-size: 30px;
+      // transform: translate(0, 100%);
+      // transition: transform 330s ease-in-out;
+      // transition: 330s ease-in-out;
+      transition: 10ms;
     }
   }
   &__menu {
@@ -39,47 +43,115 @@
     }
 
     .plats {
+      display: flex;
+      align-items: center;
+      margin: 15px 0px;
       .plat {
         background-color: #fff;
         width: 100%;
-        height: auto;
-        margin: 15px 0px;
+        height: 79px;
+        // margin: 15px 0px;
         padding: 15px;
         border-radius: 15px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-@include dropshadow;
+        @include dropshadow;
+
+        position:relative;
 
         &__description {
           h3 {
             font-size: 20px;
             font-weight: 600;
+            text-overflow: ellipsis;
           }
           p {
             @include color-darken($color-grey, 20%);
+            text-overflow: ellipsis;
           }
         }
         p {
           padding-right: 10px;
-          font-weight: 500;
+          font-weight: 600;
+        }
+        #price {
+          position: absolute;
+          right: 15px;
         }
 
+      }
+      .plat:hover {
+        // background-color: red;
+        width: 80%;
+        border-radius: 15px;
+        animation: check 1s;
+        // margin: 15px 0px;
+        padding: 15px;
 
+        .plat__description {
+          h3 {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+          p {
+            // display:inline-block;
+            max-width: 80%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            // background-color: red;
+          }
+        }
+        #price {
+          // margin-right: 20px;
+          // background-color: red;
+        }
+      }
+      i {
+        margin-left: 25px;
+        margin-right: -65px;
+        // padding-left: 25px;
+        // padding-right: 10px;
+        display: none;
+        color: #fff;
       }
     }
-  }
-  button {
-    color: #fff;
-    background: rgb(255,121,218);
-    background: linear-gradient(172deg, rgba(255,121,218,1) 21%, rgba(147,86,220,1) 95%);
-    border-radius: 50px;
-    width: 240px;
-    padding: 20px;
-    text-decoration: none;
-    border:none;
-    font-size: 20px;
-    margin: 50px auto;
+    .plats:hover {
+      background-color: $color-tertiaire;
+      border-radius: 15px;
+      overflow-x: hidden;
+      i {
+        display: block;
+        animation: rotate 1s;
+      }
 
+    }
   }
-}
+  // &__menu .plats {
+    //   background-color: blue;
+    // }
+    &__menu div:nth-of-type(2) {
+      animation: slideUp .9s ;
+    }
+    &__menu div:nth-of-type(3) {
+      animation: slideUp 1.9s;
+    }
+    &__menu div:nth-of-type(4) {
+      animation: slideUp 2.9s;
+    }
+    button {
+      color: #fff;
+      background: rgb(255,121,218);
+      background: linear-gradient(172deg, rgba(255,121,218,1) 21%, rgba(147,86,220,1) 95%);
+      border-radius: 50px;
+      width: 240px;
+      padding: 20px;
+      text-decoration: none;
+      border:none;
+      font-size: 20px;
+      margin: 50px auto;
+
+    }
+  }
