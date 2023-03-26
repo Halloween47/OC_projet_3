@@ -18,63 +18,69 @@
         @include restaurant_Card;
         margin: 25px 0px;
 
-        &__zone-image {
-          background-color: blue;
-          width: 100%;
-          height: 70%;
-          border-radius: 25px 25px 0px 0px;
+        a {
+          text-decoration: none;
+          color: inherit;
 
-          position: relative;
-          img {
+          .restaurantsCard__zone-image {
+            background-color: blue;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: 70%;
             border-radius: 25px 25px 0px 0px;
-          }
-          .nouveau {
-            background-color: $color-tertiaire;
-            color:green;
-            width: 100px; height: auto;
 
-            position: absolute;
-            top:15px;
-            right: 15px;
-            text-align: center;
-
-            padding: 10px;
-            border-radius: 5px;
-          }
-        }
-        &__zone-description {
-          background-color: #fff;
-          width: 100%;
-          height: 30%;
-          display: flex;
-          border-radius: 0px 0px 25px 25px;
-          &__txt {
-            // background-color: orange;
-            width: 80%;
-            display: flex;
-            flex-direction: column;
-            justify-content:  center;
-            h3 {
-              text-transform: capitalize;
+            position: relative;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 25px 25px 0px 0px;
             }
-            p {
-              font-size: 20px;
+            .nouveau {
+              background-color: $color-tertiaire;
+              color:green;
+              width: 100px; height: auto;
+
+              position: absolute;
+              top:15px;
+              right: 15px;
+              text-align: center;
+
+              padding: 10px;
+              border-radius: 5px;
             }
           }
-          &__icone {
-            // background-color: blue;
-            width: 20%;
-            height: 100%;
+          .restaurantsCard__zone-description {
+            background-color: #fff;
+            width: 100%;
+            height: 30%;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            border-radius: 0px 0px 25px 25px;
+            &__txt {
+              // background-color: orange;
+              width: 80%;
+              display: flex;
+              flex-direction: column;
+              justify-content:  center;
+              h3 {
+                text-transform: capitalize;
+              }
+              p {
+                font-size: 20px;
+              }
+            }
+            &__icone {
+              // background-color: blue;
+              width: 20%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
 
 
+            }
           }
         }
+
       }
     }
   }
