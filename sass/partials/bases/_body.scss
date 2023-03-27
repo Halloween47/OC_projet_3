@@ -26,7 +26,14 @@ h3 {
 .pl20 {
   padding-left: 20px;
 }
-
+a {
+  text-decoration: none;
+  color: inherit
+}
+.button:hover {
+  @include background-color-darken(#fff, 5%);
+  @include dropshadow;
+}
 // .desactive-element {
 // display: none;
 // }
