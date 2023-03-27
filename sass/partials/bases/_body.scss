@@ -8,6 +8,7 @@ body {
   background-color: #d3d3d3;
   width: 100%;
   font-family: 'Roboto', sans-serif;
+
 }
 section {
   padding: 20px;
@@ -34,6 +35,11 @@ a {
   @include background-color-darken(#fff, 5%);
   @include dropshadow;
 }
+.loader {
+  width: 100%;height: 100vh;
+  background-color: #fff;
+  animation: loader 1000ms;
+}
 // .desactive-element {
-// display: none;
-// }
+  // display: none;
+  // }

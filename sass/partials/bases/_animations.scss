@@ -21,3 +21,13 @@
 @keyframes rotate {
   100% { transform: rotate(360deg);}
 }
+
+@keyframes loader {
+  from {
+background-color: blue !important;
+opacity: 1;
+  }
+  to {
+opacity: 0;
+  }
+}
