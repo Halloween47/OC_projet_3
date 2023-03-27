@@ -507,7 +507,7 @@ a {
   z-index: 10;
   width: 100%;
   height: 100vh;
-  background-color: #fff;
+  background-color: #f4e4ba;
 }
 .loader .simple-spinner {
   width: 30px;
@@ -526,7 +526,15 @@ a {
   border-right-color: #9356DC;
   animation: spinner-anim 0.8s linear infinite;
 }
-.loader .simple-spinner img {
+.loader .simple-spinner img:nth-child(1) {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  top: 50%;
+  left: -500%;
+  transform: rotate(-30deg);
+}
+.loader .simple-spinner img:nth-child(2) {
   display: block;
   width: 150px;
   height: 150px;
