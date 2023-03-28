@@ -32,7 +32,7 @@ a {
   color: inherit
 }
 .button:hover {
-  @include background-color-darken(#fff, 5%);
+  @include background-color-lighten($color-primaire, 37%);
   @include dropshadow;
 }
 .loader {

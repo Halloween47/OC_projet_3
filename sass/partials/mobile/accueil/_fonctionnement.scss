@@ -38,12 +38,12 @@
         left: -12px;
       }
       .fonctionnement__icone {
-        background-color: green;
+        // background-color: green;
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        left: 10px;
+        left: 30px;
         i {
 
           // width: 40px;height: 40px;
@@ -55,9 +55,16 @@
       }
 
       p {
-        background-color: red;
+        // background-color: red;
         font-weight: 600;
         font-size: 1.3rem;
+      }
+    }
+    &__block:hover {
+      .fonctionnement__icone{
+        i {
+          color: $color-primaire;
+        }
       }
     }
   }
