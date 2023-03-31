@@ -2,14 +2,11 @@
   @include background-color-lighten(grey, 45%);
   width: 100%;
   height: auto;
-
   border-radius: 50px 50px 0px 0px;
   margin-top: -60px;
   padding: 40px;
-
   position: relative;
   z-index: 2;
-
   display: flex;
   flex-direction: column;
 
@@ -26,6 +23,7 @@
       transition: 10ms;
     }
   }
+
   &__menu {
     h2 {
       text-transform: uppercase;
@@ -42,278 +40,108 @@
       margin-top: 5px;
     }
 
+    .plats {
+      background-color: $color-tertiaire;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      overflow-x: hidden;
+      border-radius: 15px;
+      margin: 15px 0px;
 
+      position: relative;
+      .plat {
+        // background-color: red;
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        border-radius: 15px;
+        // margin-right: 25px;
+        padding: 15px;
 
-    ///////////////////////////////////////////////
-    ///////////////////////////////////////////////
-    ///////////////////////////////////////////////
-    ///////////////////////////////////////////////
+        position: relative;
+        z-index: 2;
+        &__description {
+          // background-color: violet;
+          width: 100%;
+          h3 {
+            // background-color: green;
+            width: auto;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+          p {
+            // background-color: pink;
+            width: 90%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+        #price {
+          // background-color: orange;
+          display: flex;
+          align-items: flex-end;
 
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+        }
+      }
+      .check {
+        background-color: blue;
+        width: 0%;
+        display: flex;
+        justify-content: center;
+        i {
+          color: #fff;
+        }
+      }
 
+    }
+    .plats:hover {
+      .plat {
+        width: 80%;
+        border-radius: 0px;
+        animation: slideLeft 2s;
+        // animation: centrer .9s, check 1s;
+      }
+      .check {
+        background-color: blue;
+        margin: 0px auto;
+        animation: transLeft 2s;
+        i {
+          color: #fff;
+          animation: rotate 2s;
+        }
+      }
+    }
 
-    // .plats {
-      //   width: 100%;
-      //   display: flex;
-      //   align-items: center;
-      //   margin: 15px 0px;
-      //   position: relative;
+  }
 
-      //   .plat {
-        //     background-color: #fff;
-        //     width: 100%;
-        //     height: 79px;
-        //     // margin: 15px 0px;
-        //     padding: 15px;
-        //     border-radius: 15px;
-        //     display: flex;
-        //     justify-content: space-between;
-        //     align-items: flex-end;
-        //     @include dropshadow;
+  &__menu div:nth-of-type(2) {
+    animation: slideUp .9s ;
+  }
 
-        //     position:relative;
+  &__menu div:nth-of-type(3) {
+    animation: slideUp 1.9s;
+  }
 
-        //     &__description {
-          //       // background-color: red;
+  &__menu div:nth-of-type(4) {
+    animation: slideUp 2.9s;
+  }
 
-          //       width: auto;
-          //       white-space: nowrap;
-          //       overflow: hidden;
-          //       text-overflow: ellipsis;
-
-          //       h3 {
-            //         font-size: 20px;
-            //         font-weight: 600;
-            //         // text-overflow: ellipsis;
-
-            //         width: auto;
-            //         white-space: nowrap;
-            //         overflow: hidden;
-            //         text-overflow: ellipsis;
-            //       }
-            //       p {
-              //         // background-color: yellow;
-              //         @include color-darken($color-grey, 20%);
-              //         // text-overflow: ellipsis;
-
-              //         width: auto;
-              //         white-space: nowrap;
-              //         overflow: hidden;
-              //         text-overflow: ellipsis;
-              //       }
-              //     }
-              //     p {
-                //       padding-right: 10px;
-                //       font-weight: 600;
-                //     }
-                //     #price {
-                  //       // position: absolute;
-                  //       // right: 15px;
-                  //     }
-
-                  //   }
-                  //   // .plat:hover {
-                    //     //   // background-color: red;
-                    //     //   width: 75%;
-                    //     //   border-radius: 15px;
-                    //     //   animation: check 1s;
-                    //     //   // margin: 15px 0px;
-                    //     //   padding: 15px;
-
-                    //     //   .plat__description {
-                      //       //     h3 {
-                        //         //       width: 200px;
-                        //         //       overflow: hidden;
-                        //         //       white-space: nowrap;
-                        //         //       text-overflow: ellipsis;
-                        //         //     }
-                        //         //     p {
-                          //           //       // display:inline-block;
-                          //           //       max-width: 80%;
-                          //           //       overflow: hidden;
-                          //           //       white-space: nowrap;
-                          //           //       text-overflow: ellipsis;
-                          //           //       // background-color: red;
-                          //           //     }
-                          //           //   }
-                          //           // }
-                          //           i {
-                            //             display: none;
-
-                            //           }
-                            //         }
-
-                            //         .plats:hover {
-                              //           background-color: $color-tertiaire;
-                              //           border-radius: 15px;
-                              //           overflow-x: hidden;
-                              //           .plat {
-                                //             background-color: red;
-                                //             width: 75%;
-                                //             border-radius: 15px;
-                                //             animation: check 1s;
-                                //             padding: 15px;
-
-                                //             .plat__description {
-                                  //               background-color: blue;
-                                  //               width: 100%;
-                                  //               overflow: hidden;
-                                  //               white-space: nowrap;
-                                  //               text-overflow: ellipsis;
-                                  //               h3 {
-                                    //                 background-color: red;
-                                    //                 width: auto;
-                                    //                 overflow: hidden;
-                                    //                 white-space: nowrap;
-                                    //                 text-overflow: ellipsis;
-                                    //               }
-                                    //               p {
-                                      //                 // display:inline-block;
-                                      //                 width: auto;
-                                      //                 overflow: hidden;
-                                      //                 white-space: nowrap;
-                                      //                 text-overflow: ellipsis;
-                                      //                 // background-color: red;
-                                      //               }
-                                      //             }
-                                      //           }
-
-                                      //           i {
-                                        //             display: block;
-                                        //             animation: rotate 1s;
-                                        //             margin: 0px auto;
-
-                                        //           }
-
-                                        //         }
-
-
-
-
-                                        ///////////////////////////////////////////////
-                                        ///////////////////////////////////////////////
-                                        ///////////////////////////////////////////////
-                                        ///////////////////////////////////////////////
-
-                                        .plats {
-                                          background-color: $color-tertiaire;
-                                          display: flex;
-                                          align-items: center;
-                                          width: 100%;
-                                          overflow-x: hidden;
-                                          border-radius: 15px;
-                                          margin: 15px 0px;
-
-                                          position: relative;
-                                          .plat {
-                                            // background-color: red;
-                                            background-color: #fff;
-                                            width: 100%;
-                                            display: flex;
-                                            border-radius: 15px;
-                                            // margin-right: 25px;
-                                            padding: 15px;
-
-                                            position: relative;
-                                            z-index: 2;
-                                            &__description {
-                                              // background-color: violet;
-                                              width: 100%;
-                                              h3 {
-                                                // background-color: green;
-                                                width: auto;
-                                                overflow: hidden;
-                                                white-space: nowrap;
-                                                text-overflow: ellipsis;
-                                              }
-                                              p {
-                                                // background-color: pink;
-                                                width: 90%;
-                                                overflow: hidden;
-                                                white-space: nowrap;
-                                                text-overflow: ellipsis;
-                                              }
-                                            }
-                                            #price {
-                                              // background-color: orange;
-                                              display: flex;
-                                              align-items: flex-end;
-
-                                              position: absolute;
-                                              right: 10px;
-                                              bottom: 10px;
-                                            }
-                                          }
-                                          .check {
-                                            background-color: blue;
-                                            width: 0%;
-                                            display: flex;
-                                            justify-content: center;
-                                            .check {
-                                              transform: translateX(30px);
-                                              i {
-                                                color: #fff;
-                                              }
-                                            }
-
-                                          }
-
-                                          }
-                                          .plats:hover {
-                                            .plat {
-                                              width: 80%;
-                                              border-radius: 0px;
-                                              // animation: slideLeft 2s;
-                                            }
-                                            .check {
-                                              display: flex;
-                                              justify-content: center;
-                                              // animation: translateLeft 2s;
-
-                                              i {
-                                                animation: rotate 1s;
-                                                color: #fff;
-                                                transform: translateX(30px);
-                                              }
-                                            }
-                                          }
-
-
-
-
-                                        }
-
-
-
-
-
-
-
-
-
-                                        // &__menu .plats {
-                                          //   background-color: blue;
-                                          // }
-
-                                          &__menu div:nth-of-type(2) {
-                                            animation: slideUp .9s ;
-                                          }
-                                          &__menu div:nth-of-type(3) {
-                                            animation: slideUp 1.9s;
-                                          }
-                                          &__menu div:nth-of-type(4) {
-                                            animation: slideUp 2.9s;
-                                          }
-                                          button {
-                                            color: #fff;
-                                            background: rgb(255,121,218);
-                                            background: linear-gradient(172deg, rgba(255,121,218,1) 21%, rgba(147,86,220,1) 95%);
-                                            border-radius: 50px;
-                                            width: 240px;
-                                            padding: 20px;
-                                            text-decoration: none;
-                                            border:none;
-                                            font-size: 20px;
-                                            margin: 50px auto;
-
-                                          }
-                                        }
+  button {
+    color: #fff;
+    background: rgb(255,121,218);
+    background: linear-gradient(172deg, rgba(255,121,218,1) 21%, rgba(147,86,220,1) 95%);
+    border-radius: 50px;
+    width: 240px;
+    padding: 20px;
+    text-decoration: none;
+    border:none;
+    font-size: 20px;
+    margin: 50px auto;
+  }
+}

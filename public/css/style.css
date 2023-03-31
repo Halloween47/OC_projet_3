@@ -6,9 +6,9 @@
   font-family: "Shrikhand", cursive;
 }
 
-@keyframes translateLeft {
+@keyframes transLeft {
   0% {
-    transform: translateX(200px);
+    transform: translateX(50px);
   }
   100% {
     transform: translateX(0px);
@@ -38,6 +38,15 @@
   }
   100% {
     width: 75%;
+  }
+}
+@keyframes centrer {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    display: flex;
+    justify-content: center;
   }
 }
 @keyframes rotate {
@@ -456,24 +465,22 @@ a {
     display: flex;
     justify-content: center;
   }
-  .menus__menu .plats .check .check {
-    transform: translateX(30px);
-  }
-  .menus__menu .plats .check .check i {
+  .menus__menu .plats .check i {
     color: #fff;
   }
   .menus__menu .plats:hover .plat {
     width: 80%;
     border-radius: 0px;
+    animation: slideLeft 2s;
   }
   .menus__menu .plats:hover .check {
-    display: flex;
-    justify-content: center;
+    background-color: blue;
+    margin: 0px auto;
+    animation: transLeft 2s;
   }
   .menus__menu .plats:hover .check i {
-    animation: rotate 1s;
     color: #fff;
-    transform: translateX(30px);
+    animation: rotate 2s;
   }
   .menus__menu div:nth-of-type(2) {
     animation: slideUp 0.9s;

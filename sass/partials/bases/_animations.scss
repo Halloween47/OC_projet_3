@@ -1,6 +1,6 @@
-@keyframes translateLeft {
+@keyframes transLeft {
   0% {
-transform: translateX(200px);
+transform: translateX(50px);
   }
   100% {
     transform: translateX(0px);
@@ -34,9 +34,20 @@ width: 80%;
     width: 75%;
   }
 }
-
+@keyframes centrer {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    display: flex;
+    justify-content: center;
+  }
+}
 @keyframes rotate {
-  100% { transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg);
+
+  }
 }
 
 @keyframes loader {
