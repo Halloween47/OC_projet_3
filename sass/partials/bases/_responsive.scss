@@ -2,8 +2,11 @@
 
   @import 'mixin';
 
-@import '../header';
-@import '../footer';
+// @import '../header';
+// @import '../footer';
+
+@import '../mobile/header';
+@import '../mobile/footer';
 
   @import '../mobile/accueil/localisation';
   @import '../mobile/accueil/hero';
