@@ -270,7 +270,7 @@ a {
     width: 90%;
     height: 50px;
     margin: 15px 0px;
-    padding: 40px 40px 40px 40px;
+    padding: 40px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,16 +295,15 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    left: 30px;
   }
   .fonctionnement__etapes__block .fonctionnement__icone i {
     color: grey;
     font-size: 1.3rem;
+    margin: 3px 10px;
   }
   .fonctionnement__etapes__block p {
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 18px;
   }
   .fonctionnement__etapes__block:hover .fonctionnement__icone i {
     color: #9356DC;
