@@ -50,7 +50,7 @@
           color: grey;
           // font-size: 30px;
           font-size: 1.3rem;
-          margin: 3px 10px;
+          margin: 3px 15px;
         }
       }
 
@@ -58,6 +58,9 @@
         // background-color: red;
         font-weight: 600;
         font-size: 18px;
+        overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
       }
     }
     &__block:hover {
