@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0px 0px 20px 0px;
 // display: none;
 
     h1 {
@@ -29,8 +30,8 @@
 
   &__menu {
     display: flex;
-    // flex-direction: column;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     // margin: 50px;
     h2 {
       text-transform: uppercase;
@@ -44,18 +45,18 @@ margin: inherit;
       @include background-color-lighten($color-tertiaire, 0%);
       // background-color: green;
       width: 50px; height: 3px;
-      // margin-top: 5px;
-      margin-left: 10px;
+      margin-top: 5px;
+      margin-left: 0px;
     }
 
     .plats {
       background-color: $color-tertiaire;
       display: flex;
       align-items: center;
-      width: 30%;
+      width: 90%;
       overflow-x: hidden;
       border-radius: 15px;
-      margin: 15px 20px;
+      margin: 15px 0px;
 
       position: relative;
       .plat {
