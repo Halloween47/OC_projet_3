@@ -1,0 +1,158 @@
+.menus {
+  @include background-color-lighten(grey, 45%);
+  width: 100%;
+  height: auto;
+  border-radius: 50px 50px 0px 0px;
+  margin-top: -60px;
+  padding: 40px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+
+  &__titre {
+    // background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+// display: none;
+
+    h1 {
+      font-weight: 500;
+      font-size: 30px;
+      // transform: translate(0, 100%);
+      // transition: transform 330s ease-in-out;
+      // transition: 330s ease-in-out;
+      transition: 10ms;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    // margin: 50px;
+    h2 {
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 20px;
+      @include color-darken(grey, 10%);
+      margin-bottom: 0;
+margin: inherit;
+    }
+    .trait {
+      @include background-color-lighten($color-tertiaire, 0%);
+      // background-color: green;
+      width: 50px; height: 3px;
+      // margin-top: 5px;
+      margin-left: 10px;
+    }
+
+    .plats {
+      background-color: $color-tertiaire;
+      display: flex;
+      align-items: center;
+      width: 30%;
+      overflow-x: hidden;
+      border-radius: 15px;
+      margin: 15px 20px;
+
+      position: relative;
+      .plat {
+        // background-color: red;
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        border-radius: 15px;
+        // margin-right: 25px;
+        padding: 15px;
+
+        position: relative;
+        z-index: 2;
+        &__description {
+          // background-color: violet;
+          width: 100%;
+          h3 {
+            // background-color: green;
+            width: auto;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+          p {
+            // background-color: pink;
+            width: 90%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+        #price {
+          // background-color: orange;
+          display: flex;
+          align-items: flex-end;
+
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+        }
+      }
+      .check {
+        background-color: blue;
+        width: 0%;
+        display: flex;
+        justify-content: center;
+        i {
+          color: #fff;
+        }
+      }
+
+    }
+    .plats:hover {
+      .plat {
+        width: 80%;
+        border-radius: 0px;
+        animation: slideLeft 2s;
+        // animation: centrer .9s, check 1s;
+      }
+      .check {
+        background-color: blue;
+        margin: 0px auto;
+        animation: transLeft 2s;
+        i {
+          color: #fff;
+          animation: rotate 2s;
+        }
+      }
+    }
+
+  }
+
+  &__menu div:nth-of-type(2) {
+    animation: slideUp .9s ;
+  }
+
+  &__menu div:nth-of-type(3) {
+    animation: slideUp 1.9s;
+  }
+
+  &__menu div:nth-of-type(4) {
+    animation: slideUp 2.9s;
+  }
+
+  button {
+    color: #fff;
+    background: rgb(255,121,218);
+    background: linear-gradient(172deg, rgba(255,121,218,1) 21%, rgba(147,86,220,1) 95%);
+    border-radius: 50px;
+    width: 240px;
+    padding: 20px;
+    text-decoration: none;
+    border:none;
+    font-size: 20px;
+    margin: 50px auto;
+  }
+
+}
+
+

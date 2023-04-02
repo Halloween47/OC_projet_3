@@ -3,18 +3,46 @@
 @import 'partials/bases/mixin';
 @import 'partials/bases/animations';
 
-
 @import 'partials/bases/body';
-@import 'partials/bases/responsive';
+// @import 'partials/bases/responsive';
 
 @import 'partials/loader';
 
-@import 'partials/desktop/accueil/header';
-@import 'partials/desktop/accueil/localisation';
-@import 'partials/desktop/accueil/hero';
-@import 'partials/desktop/accueil/fonctionnement';
-@import 'partials/desktop/accueil/restaurants';
-@import 'partials/desktop/accueil/footer';
+// MOBILE
+@media (max-width: 599px) {
+  @import 'partials/mobile/header';
+  @import 'partials/mobile/footer';
 
-@import 'partials/desktop/menus/hero';
-@import 'partials/desktop/menus/menu';
+  @import 'partials/mobile/accueil/localisation';
+  @import 'partials/mobile/accueil/hero';
+  @import 'partials/mobile/accueil/fonctionnement';
+  @import 'partials/mobile/accueil/restaurants';
+
+  @import 'partials/mobile/menus/hero';
+  @import 'partials/mobile/menus/menu';
+}
+// TABLET
+@media (min-width: 599px) and (max-width: 768px) {
+
+  @import 'partials/tablet/accueil/header';
+  @import 'partials/tablet/accueil/localisation';
+  @import 'partials/tablet/accueil/hero';
+  @import 'partials/tablet/accueil/fonctionnement';
+  @import 'partials/tablet/accueil/restaurants';
+  @import 'partials/tablet/accueil/footer';
+
+  @import 'partials/tablet/menus/hero';
+  @import 'partials/tablet/menus/menu';
+}
+// DESKTOP
+@media (min-width: 769px) {
+  @import 'partials/desktop/accueil/header';
+  @import 'partials/desktop/accueil/localisation';
+  @import 'partials/desktop/accueil/hero';
+  @import 'partials/desktop/accueil/fonctionnement';
+  @import 'partials/desktop/accueil/restaurants';
+  @import 'partials/desktop/accueil/footer';
+
+  @import 'partials/desktop/menus/hero';
+  @import 'partials/desktop/menus/menu';
+}
