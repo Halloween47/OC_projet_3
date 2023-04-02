@@ -13,8 +13,8 @@
       // background-color: red;
       // background-color: #fff;
       width: 25%; height: 50px;
-      margin: 15px 0px;
-      padding: 40px 40px 40px 40px;
+      margin: 15px;
+      padding: 40px 0px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -41,22 +41,27 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        left: 30px;
+        // position: absolute;
+        // left: 30px;
+        margin-right: 20px;
         i {
 
           // width: 40px;height: 40px;
           color: grey;
           // font-size: 30px;
-          font-size: 1.3rem;
+          font-size: 2rem;
           // margin-right: 30px;
         }
       }
 
       p {
         // background-color: red;
+        // width: 100%;
         font-weight: 600;
-        font-size: 1.3rem;
+        font-size: 2rem;
+        overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
       }
     }
     &__block:hover {
