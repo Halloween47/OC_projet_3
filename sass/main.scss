@@ -9,9 +9,12 @@
 
 @import 'partials/loader';
 
-@import 'partials/desktop/header';
-@import 'partials/desktop/localisation';
-@import 'partials/desktop/hero';
-@import 'partials/desktop/fonctionnement';
-@import 'partials/desktop/restaurants';
-@import 'partials/desktop/footer';
+@import 'partials/desktop/accueil/header';
+@import 'partials/desktop/accueil/localisation';
+@import 'partials/desktop/accueil/hero';
+@import 'partials/desktop/accueil/fonctionnement';
+@import 'partials/desktop/accueil/restaurants';
+@import 'partials/desktop/accueil/footer';
+
+@import 'partials/desktop/menus/hero';
+@import 'partials/desktop/menus/menu';
