@@ -1,1 +1,1 @@
-Lorem ipsum
+Merci pour votre attention.
