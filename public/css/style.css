@@ -397,7 +397,6 @@ a {
   .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(2) {
     z-index: 10;
     color: rgb(147, 86, 220);
-    background: linear-gradient(197deg, rgb(147, 86, 220) 19%, rgb(255, 121, 218) 98%);
   }
   .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(1):hover {
     z-index: 5;
@@ -753,7 +752,6 @@ a {
   .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(2) {
     z-index: 10;
     color: rgb(147, 86, 220);
-    background: linear-gradient(197deg, rgb(147, 86, 220) 19%, rgb(255, 121, 218) 98%);
   }
   .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(1):hover {
     z-index: 5;
@@ -1148,7 +1146,6 @@ a {
   .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(2) {
     z-index: 10;
     color: rgb(147, 86, 220);
-    background: linear-gradient(197deg, rgb(147, 86, 220) 19%, rgb(255, 121, 218) 98%);
   }
   .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(1):hover {
     z-index: 5;
