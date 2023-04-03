@@ -1,18 +1,18 @@
 @keyframes transLeft {
   0% {
-transform: translateX(50px);
+    transform: translateX(50px);
   }
   100% {
     transform: translateX(0px);
   }
 }
 @keyframes slideLeft {
-0% {
-width: 100%;
-}
-100% {
-width: 80%;
-}
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 
 @keyframes slideUp {
@@ -54,7 +54,6 @@ width: 80%;
   from {
     opacity: 1;
     visibility: visible;
-
   }
   to {
     // opacity: 0;
@@ -71,6 +70,7 @@ width: 80%;
     transform: rotate(360deg);
   }
 }
+
 
 // @keyframes spinner-anim {
   //   0% {
