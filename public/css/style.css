@@ -72,6 +72,15 @@
     transform: rotate(360deg);
   }
 }
+@keyframes fillIcon {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: rgb(147, 86, 220);
+    color: linear-gradient(197deg, rgb(147, 86, 220) 19%, rgb(255, 121, 218) 98%);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -387,19 +396,15 @@ a {
     align-items: center;
     position: relative;
   }
-  .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i {
+  .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(1) {
     position: absolute;
   }
-  .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(1) {
-    background-color: #fff;
-    z-index: 20;
-  }
   .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(2) {
-    z-index: 10;
-    color: rgb(147, 86, 220);
+    position: absolute;
+    color: transparent;
   }
-  .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(1):hover {
-    z-index: 5;
+  .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(2):hover {
+    animation: fillIcon 0.3s forwards;
   }
   .menu-hero {
     width: 100%;
@@ -431,6 +436,21 @@ a {
     font-weight: 500;
     font-size: 30px;
     transition: 10ms;
+  }
+  .menus__titre__icones {
+    background-color: red !important;
+    position: relative;
+    margin-right: 20px;
+  }
+  .menus__titre__icones i:nth-child(1) {
+    position: absolute;
+  }
+  .menus__titre__icones i:nth-child(2) {
+    position: absolute;
+    color: transparent;
+  }
+  .menus__titre__icones i:nth-child(2):hover {
+    animation: fillIcon 0.3s forwards;
   }
   .menus__menu h2 {
     text-transform: uppercase;
@@ -746,15 +766,14 @@ a {
     position: absolute;
   }
   .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(1) {
-    background-color: #fff;
-    z-index: 20;
+    position: absolute;
   }
   .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(2) {
-    z-index: 10;
-    color: rgb(147, 86, 220);
+    position: absolute;
+    color: transparent;
   }
-  .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(1):hover {
-    z-index: 5;
+  .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(2):hover {
+    animation: fillIcon 0.3s forwards;
   }
   .footer {
     background-color: #343434;
@@ -820,6 +839,21 @@ a {
     font-weight: 500;
     font-size: 30px;
     transition: 10ms;
+  }
+  .menus__titre__icones {
+    background-color: red !important;
+    position: relative;
+    margin-right: 20px;
+  }
+  .menus__titre__icones i:nth-child(1) {
+    position: absolute;
+  }
+  .menus__titre__icones i:nth-child(2) {
+    position: absolute;
+    color: transparent;
+  }
+  .menus__titre__icones i:nth-child(2):hover {
+    animation: fillIcon 0.3s forwards;
   }
   .menus__menu {
     display: flex;
@@ -1140,15 +1174,14 @@ a {
     position: absolute;
   }
   .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(1) {
-    background-color: #fff;
-    z-index: 20;
+    position: absolute;
   }
   .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(2) {
-    z-index: 10;
-    color: rgb(147, 86, 220);
+    position: absolute;
+    color: transparent;
   }
-  .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(1):hover {
-    z-index: 5;
+  .restaurants__cards .restaurantsCard a .restaurantsCard__zone-description__icone i:nth-child(2):hover {
+    animation: fillIcon 0.3s forwards;
   }
   .footer {
     background-color: #343434;
@@ -1211,6 +1244,21 @@ a {
     font-weight: 500;
     font-size: 30px;
     transition: 10ms;
+  }
+  .menus__titre__icones {
+    background-color: red !important;
+    position: relative;
+    margin-right: 20px;
+  }
+  .menus__titre__icones i:nth-child(1) {
+    position: absolute;
+  }
+  .menus__titre__icones i:nth-child(2) {
+    position: absolute;
+    color: transparent;
+  }
+  .menus__titre__icones i:nth-child(2):hover {
+    animation: fillIcon 0.3s forwards;
   }
   .menus__menu {
     display: flex;

@@ -94,19 +94,14 @@ flex-direction: column;
                 i {
                   position: absolute;
                 }
-                i:nth-child(1) {
-                  background-color: #fff;
-                  z-index: 20;
-                }
+                i:nth-child(1) {position: absolute;}
                 i:nth-child(2) {
-                  z-index: 10;
-                    color: rgb(147,86,220);
-
+                  position: absolute;
+                  color: transparent;
                 }
-                i:nth-child(1):hover {
-z-index: 5;
+                i:nth-child(2):hover {
+                  animation: fillIcon .3s forwards;
                 }
-
 
 
 

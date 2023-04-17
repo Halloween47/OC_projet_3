@@ -22,6 +22,21 @@
       // transition: 330s ease-in-out;
       transition: 10ms;
     }
+    &__icones {
+      background-color: red !important;
+      position: relative;
+margin-right: 20px;
+
+      i:nth-child(1) {position: absolute;}
+      i:nth-child(2) {
+        position: absolute;
+        color: transparent;
+      }
+      i:nth-child(2):hover {
+        animation: fillIcon .3s forwards;
+      }
+    }
+
   }
 
   &__menu {

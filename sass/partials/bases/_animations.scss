@@ -119,3 +119,12 @@
 
 
 
+                              @keyframes fillIcon {
+                                0% {
+                                  color: transparent;
+                                }
+                                100% {
+                                  color: rgb(147,86,220);
+                                  color: linear-gradient(197deg, rgba(147,86,220,1) 19%, rgba(255,121,218,1) 98%);
+                                }
+                              }
